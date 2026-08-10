@@ -1,0 +1,110 @@
+/* =====================================================
+   ANIMATION CSS
+===================================================== */
+
+
+/* HERO */
+
+.hero-content {
+    animation: heroContent 0.8s ease both;
+}
+
+.hero-image {
+    animation: heroImage 0.9s ease both;
+}
+
+
+/* PROFILE */
+
+.profile-ring {
+    animation: floating 5s ease-in-out infinite;
+}
+
+
+/* CARDS */
+
+.skill-card,
+.project-card,
+.experience-card,
+.certificate-card {
+    animation: fadeUp 0.7s ease both;
+}
+
+
+/* BUTTON */
+
+.btn,
+.small-btn {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =====================================================
+   KEYFRAMES
+===================================================== */
+
+@keyframes heroContent {
+
+    from {
+        opacity: 0;
+
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes heroImage {
+
+    from {
+        opacity: 0;
+
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
